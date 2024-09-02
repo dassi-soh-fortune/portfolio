@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body class="font-nunito">
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 relative">
+        <nav class="top-0 bg-white w-full">
+            <div class="flex items-center justify-between mx-10 py-5">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-user-tie text-indigo-900 text-2xl"></i>
+                    <span class="text-xl font-bold text-indigo-900">Portfolio.</span>
+                </div>
+
+                <ul class="hidden md:flex space-x-10 items-center text-gray-600 font-bold text-sm uppercase">
+                    <li class="hover:text-gray-500">
+                        <a href="#">Homepage</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#">About Me</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#">Contacts</a>
+                    </li>
+                </ul>
+
+                <i class="fa-solid fa-moon md:block text-2xl text-yellow-400 cursor-pointer hidden"></i>
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer relative z-20">
+                    <div class="w-6 h-0.5 bg-black "></div>
+                    <div class="w-6 h-0.5 bg-black "></div>
+                    <div class="w-6 h-0.5 bg-black "></div>
+                </div>
+                <div id="menu"
+                    class="hidden bg-indigo-900 absolute left-0 top-0 w-full rounded-b-3xl p-10 space-y-10 text-indigo-200 text-center ">
+                    <ul class="space-y-10">
+                        <li>
+                            <a href="#">Homepage</a>
+                        </li>
+                        <li>
+                            <a href="#">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+
+                    </ul>
+                    <div>
+                        <span id="name" class="absolute top-0 left-0 cursor-pointer font-bold text-black bg-indigo-200  text-xl ">X</span>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+       <img class="absolute bottom-0  right-0 object-cover h-full lg:left-0 mx-auto" src="img/images.jpeg" alt="">
+       <div class="hidden lg:block left-0 right-0 mx-auto w-96 h-96 bg-indigo-900 -b-1/4 absolute rounded-full bottom-0">
+       </div>
+
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
